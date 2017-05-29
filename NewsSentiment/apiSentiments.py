@@ -2,8 +2,8 @@ import requests as req
 import json
 from textblob import TextBlob as Blob
 
-API_KEY = 'dba751dd13704051954b6791fc8b505f'
-HEADLINES_URL = 'https://newsapi.org/v1/articles?source=%s&apiKey=%s'
+API_KEY = # Insert you own API Key for newsAPI here
+HEADLINES_URL = 'https://newsapi.org/v1/articles?source=%s&apiKey=%s&sort=latest'
 
 SOURCES_LIST = ['bloomberg', 'business-insider', 'cnbc', 'financial-times', 'fortune', 'the-economist', 'the-wall-street-journal']
 
