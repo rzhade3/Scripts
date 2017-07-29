@@ -1,0 +1,24 @@
+{
+  "name": "amazon-dash",
+  "version": "1.0.0",
+  "description": "Server to detect Amazon Dash presses",
+  "main": "server.js",
+  "scripts": {
+    "start": "sudo node server.js",
+    "test": "sudo nodemon server.js",
+    "scan": "dash-button scan"
+  },
+  "keywords": [
+    "Amazon",
+    "Dash"
+  ],
+  "author": "Rahul Zhade",
+  "license": "ISC",
+  "dependencies": {
+    "dash-button": "^3.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
