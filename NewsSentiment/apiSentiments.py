@@ -13,7 +13,7 @@ API_KEY = os.environ.get("HEADLINES_API_KEY")
 HEADLINES_URL = 'https://newsapi.org/v1/articles?source=%s&apiKey=%s&sort=latest'
 
 SOURCES_LIST = ['bloomberg', 'business-insider', 'cnbc', 'financial-times', 'fortune', 'the-economist', 'the-wall-street-journal']
-data_file = 'data.json'
+data_file = 'data/data.json'
 
 def mainLogic():
 	totalSentiment = 0
@@ -35,7 +35,7 @@ def mainLogic():
 	print(mostNegative)
 	with open(data_file, 'r') as f:
 	    json_data = json.load(f)
-	json_data[time.strftime("%d/%m/%Y")] = totalSentiment
+	json_data[time.strftime("%d/%m/%Y %H:%M")] = totalSentiment
 	with open(data_file, 'w') as f:
 	    f.write(json.dumps(json_data))
 
