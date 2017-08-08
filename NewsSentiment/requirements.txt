@@ -1,5 +1,0 @@
-dotenv
-json
-os
-requests
-textblob
