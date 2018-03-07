@@ -16,4 +16,7 @@ A port scanner that I wrote in Java.
 
 ### [RapMarkov](https://github.com/rzhade3/Scripts/tree/master/RapMarkov)
 
-A random string generator that I created using Kendrick Lamar's rap lyrics as a corpus. 
+A random string generator that I created using Kendrick Lamar's rap lyrics as a corpus.
+
+### [Reddit Analysis](https://github.com/rzhade3/Scripts/tree/master/RedditAnalysis)
+

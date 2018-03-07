@@ -5,6 +5,9 @@ Blockchain* blockchain;
 /* Creates a new chain with the genesis block */
 void new_chain() {
 	blockchain = malloc(sizeof(Blockchain));
+	if (!blockchain) {
+		return NULL;
+	}
 	blockchain -> last_block = (Block*) new_genesis_block();
 	blockchain -> size = 1;
 }
