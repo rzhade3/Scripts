@@ -15,5 +15,11 @@ block_t* create_genesis_block() {
 
 block_t* new_block(char* data) {
 	block_t* block = malloc(sizeof(block_t));
+	block -> timestamp = time(0);
+	block -> data = data;
 	return block;
+}
+
+void calculate_hash(block_t* block) {
+	block -> hash = 7890;
 }

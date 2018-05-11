@@ -13,11 +13,14 @@ void mine() {
 
 int main() {
 	printf("Hello World\n");
+	init_blockchain();
 	while(1) {
 		printf("Enter a value\n");
 		char c[10];
 		fgets(c, 10, stdin);
 		printf("You have entered: ");
 		puts(c);
+		break;
 	}
+	
 }

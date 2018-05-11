@@ -1,7 +1,7 @@
 TARGET = blockchain
 
 CC     = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -Wextra -Wsign-conversion -Wpointer-arith -Wcast-qual -Wwrite-strings -Wshadow -Wmissing-prototypes -Wpedantic -Wwrite-strings -g -std=gnu99
 
 SRCDIR = src
 INCDIR = $(SRCDIR)
